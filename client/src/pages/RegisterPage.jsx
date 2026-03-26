@@ -17,7 +17,7 @@ const RegisterPage = () => {
     setError("");
 
     try {
-      const res = await fetch("https://your-backend.onrender.com/api/auth/register", {
+      const res = await fetch("https://student-dashboard-mdotx.onrender.com/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

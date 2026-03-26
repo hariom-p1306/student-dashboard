@@ -15,7 +15,7 @@ const LoginPage = () => {
     setError("");
 
     try {
-      const res = await fetch("https://your-backend.onrender.com/api/auth/login", {
+      const res = await fetch("https://student-dashboard-mdotx.onrender.com/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
