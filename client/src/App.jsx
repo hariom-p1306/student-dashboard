@@ -13,7 +13,6 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/" element={<LoginPage />} />
 
-
         <Route
           path="/dashboard"
           element={
@@ -22,12 +21,28 @@ function App() {
             </ProtectedRoute>
           }
         />
-        <Route path="/tasks" element={<TasksPage />} />
-        <Route path="/study" element={<StudyPage />} />
+
+        <Route
+          path="/tasks"
+          element={
+            <ProtectedRoute>
+              <TasksPage />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/study"
+          element={
+            <ProtectedRoute>
+              <StudyPage />
+            </ProtectedRoute>
+          }
+        />
 
       </Routes>
     </BrowserRouter>
   );
 }
 
-export default App;
+export default App; 
