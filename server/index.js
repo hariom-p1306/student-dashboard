@@ -10,7 +10,7 @@ const app = express();
 const corsOptions = {
   origin: [
     "http://localhost:5173",   // local
-    "https://your-frontend.vercel.app" // ✅ ONLY FRONTEND URL
+    "https://your-frontend.vercel.app" //
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
